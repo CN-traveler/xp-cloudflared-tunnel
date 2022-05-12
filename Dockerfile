@@ -2,8 +2,6 @@ FROM ubuntu
 
 ADD entrypoint.sh /opt/entrypoint.sh
 
-RUN ls /github/home
-
 RUN apt-get update && \
     apt-get install -y curl && \
     apt-get install -y wget && \
