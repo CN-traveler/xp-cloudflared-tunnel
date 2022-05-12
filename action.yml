@@ -8,5 +8,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - '-v ./ /www/admin/localhost_80/wwwroot'
     - ${{ inputs.token }}
     - ${{ inputs.password }}
