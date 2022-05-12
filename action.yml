@@ -1,0 +1,12 @@
+name: 'xp-cloudflared-tunnel'
+inputs:
+  token:
+    required: true
+  password:
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.token }}
+    - ${{ inputs.password }}
